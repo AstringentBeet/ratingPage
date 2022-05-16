@@ -3,13 +3,13 @@ body {
     background-color: #131518;
 }
 
-section.survey{
+section.survey, section.thanks{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-div.survey--container {
+div.survey--container, div.thanks--container {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -23,15 +23,15 @@ div.survey--star{
     border-radius: 50%;
 }
 
-h1.survey--heading{ 
+h1.survey--heading, h1.thanks--heading{ 
     color: white;
 }
 
-p.survey--para{
+p.survey--para, p.thanks--para{
     color: #969FAD
 }
 
-div.survey--rating{
+div.survey--rating {
     display: flex;
     justify-content: center;
 }
@@ -58,7 +58,7 @@ div.survey--rating li{
         color: white;
     }
 
-    div.survey--rating li:active, li:focus {
+    div.survey--rating li:focus {
         background-color: #7C8798;
         color: white;
     }
@@ -76,15 +76,31 @@ button:hover{
     background-color: white;
 }
 
-/*must update utilizing Javascript*/
-section.thanks{
+section.survey{
     display: none;
 }
 
-footer{
+section.thanks{
+
+}
+
+p.thanks--sentence {
+    color: #FC7614;
+    border-radius: 22.5px;
+    background-color: #262E38;
+}
+
+p.thanks--sentence{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
     font-size: .9em;
     color: #969FAD;
     position: absolute;
+    text-align: center;
     bottom: 0;
     width: 100%;
     height: 2.5rem;

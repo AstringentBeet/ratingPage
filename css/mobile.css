@@ -29,12 +29,10 @@
 
     p.survey--para{
         font-size: 14px;
-        line-height: 22px;
         height: 66px;
         width: 279px;
         margin-bottom: 24px;
     }
-
 
     div.survey--rating{
         margin-bottom: 24px;
@@ -49,15 +47,27 @@
         width: 42px;
     }
 
-    div.survey--rating li:hover{
+    div.survey--rating li:hover {
         height: 48px;
         width: 48px;
     }
 
     button {
-        width: 280px;
         height: 45px;
+        width: 280px;
         border-radius: 22.5px;
+    }
+
+    button:hover {
+        font-size: 1em;
+        height: 50px;
+        width: 284px;
+    }
+
+    p.thanks--sentence {
+        height: 32px;
+        width: 168px;
+        font-size: 14px;
     }
 
 }
