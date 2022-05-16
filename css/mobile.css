@@ -11,6 +11,12 @@
         border-radius: 15px;
     }
 
+    div.survey--star_container{
+        margin-top: 24px;
+        margin-bottom: 16px;
+        width: 279px;
+    }
+
     div.survey--star{
         height: 42px;
         width: 42px;
@@ -18,12 +24,34 @@
     
     h1.survey--heading{
         width: 279px;
+        margin-bottom: 10px;
     }
 
     p.survey--para{
         font-size: 14px;
+        line-height: 22px;
         height: 66px;
         width: 279px;
+        margin-bottom: 24px;
+    }
+
+
+    div.survey--rating{
+        margin-bottom: 24px;
+    }
+
+    div.survey--rating ul{
+        width: 281px;
+    }
+
+    div.survey--rating li{
+        height: 42px;
+        width: 42px;
+    }
+
+    div.survey--rating li:hover{
+        height: 48px;
+        width: 48px;
     }
 
     button {
@@ -32,13 +60,4 @@
         border-radius: 22.5px;
     }
 
-
-    div.survey--rating ul{
-        width: 281px;
-    }
-
-    li{
-        height: 42px;
-        width: 42px;
-    }
 }
