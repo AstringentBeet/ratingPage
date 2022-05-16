@@ -58,7 +58,7 @@ div.survey--rating li{
         color: white;
     }
 
-    div.survey--rating li:focus {
+    div.survey--rating li:active, li:focus {
         background-color: #7C8798;
         color: white;
     }
