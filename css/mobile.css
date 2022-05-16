@@ -1,3 +1,44 @@
-@media only screen and (max-width: 400){
+@media only screen and (max-width: 375px){
+
+    section.survey{
+        height: 100vh;
+    }
     
+    div.survey--container{
+        height: 360px;
+        width: 328px;
+        background-color: #232a34;
+        border-radius: 15px;
+    }
+
+    div.survey--star{
+        height: 42px;
+        width: 42px;
+    }
+    
+    h1.survey--heading{
+        width: 279px;
+    }
+
+    p.survey--para{
+        font-size: 14px;
+        height: 66px;
+        width: 279px;
+    }
+
+    button {
+        width: 280px;
+        height: 45px;
+        border-radius: 22.5px;
+    }
+
+
+    div.survey--rating ul{
+        width: 281px;
+    }
+
+    li{
+        height: 42px;
+        width: 42px;
+    }
 }

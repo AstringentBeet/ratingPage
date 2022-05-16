@@ -3,6 +3,26 @@ body {
     background-color: #131518;
 }
 
+section.survey{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.survey--container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.survey--star{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262E38;
+    border-radius: 50%;
+}
+
 h1.survey--heading{ 
     color: white;
 }
@@ -11,28 +31,52 @@ p.survey--para{
     color: #969FAD
 }
 
-ul > li{
-    display: inline-block;
+div.survey--rating{
+    display: flex;
+    justify-content: center;
 }
 
-li.survey--rating_numbers{
+div.survey--rating ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+div.survey--rating li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #262E38;
     color: #7C8798;
+    border-radius: 50%;
 }
 
 button {
     border: none;
     color: white;
     background-color: #FC7614;
+    cursor: pointer;
 }
 
+/*must update utilizing Javascript*/
 section.thanks{
     display: none;
 }
 
 footer{
+    font-size: .9em;
+    color: #969FAD;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+}
+
+footer a.links:link, a.links:visited {
+    color: #FC7614;   
+    text-decoration: none;
+}
+
+footer a.links:active{
+    color: white;
 }
