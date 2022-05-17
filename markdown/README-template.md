@@ -8,6 +8,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
+  - [Progress log](#progress-log)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -48,6 +49,15 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 The first step is to create a mobile page.
+
+### Progress Log
+
+#### 05/16
+Created the first half of the main main layout with a focus on the mobile page. I decided to go with an unordered list  list that mimics buttons, adding the `:hover`, `:focus`, and `:active`pseudo-elements to add the color and resize effects.
+The 'thank you' section has the basic outline but I'll deal with that more tomorrow.
+
+#### 05/17
+I recently watched a video that reminded me that HTML has `<input>` tags that gather user information, specifically the radio type. So, I'm redoing the rating selection to remove the need of overstyling a simple unordered list (which is more commonly used for navigation).
 
 ### Built with
 
