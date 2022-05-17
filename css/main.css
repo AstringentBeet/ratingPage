@@ -31,6 +31,7 @@ p.survey--para, p.thanks--para{
     color: #969FAD
 }
 
+/*
 div.survey--rating {
     display: flex;
     justify-content: center;
@@ -62,6 +63,7 @@ div.survey--rating li{
         background-color: #7C8798;
         color: white;
     }
+    */
 
 button {
     border: none;
@@ -77,11 +79,10 @@ button:hover{
 }
 
 section.survey{
-    display: none;
 }
 
 section.thanks{
-
+    display: none;
 }
 
 p.thanks--sentence {
