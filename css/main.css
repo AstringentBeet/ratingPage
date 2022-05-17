@@ -77,11 +77,11 @@ button:hover{
 }
 
 section.survey{
-    display: none;
+
 }
 
 section.thanks{
-
+    display: none
 }
 
 p.thanks--sentence {
