@@ -50,7 +50,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## My process
 The first step is to create a mobile page.
 
-## Progress Log
+### Progress Log
 
 #### 05/16
 Created the first half of the main main layout with a focus on the mobile page. I decided to go with an unordered list  list that mimics buttons, adding the `:hover`, `:focus`, and `:active`pseudo-elements to add the color and resize effects.
