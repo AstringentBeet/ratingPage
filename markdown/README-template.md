@@ -8,7 +8,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
-  - [Progress Log](#progress-log)
+  - [Progress log](#progress-log)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
@@ -119,6 +119,6 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+The Youtube channel, CodingNepal, was a [tremendous inspiration for both the HTML and CSS layout](https://www.youtube.com/watch?v=rw3eZ6XodN8). The best part about this video is that there isn't any talking or explaining, as it is self-explanatory. Instead of being over fifty minutes, it's a brief sixteen minutes long. There needs to be more channels such as this
 
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
