@@ -36,8 +36,6 @@ div.survey--rating{
     justify-content: space-between;
     flex-direction: row;
     padding: 0;
-    height: 42px;
-    width: 281px;
 }
 
 div.survey--rating input{
@@ -50,8 +48,6 @@ div.survey--rating label{
     align-items: center;
     background-color: #262E38;
     border-radius: 50%;
-    height: 42px;
-    width: 42px;
     cursor: pointer;
     transition: ease .3s;
 }
@@ -71,48 +67,12 @@ input#survey--rate-5 + label::before{ content: "5"}
 
 /*a very interestig selector*/
 div.survey--rating input:not(:checked) ~ label:hover{
-    height: 48px;
-    width: 48px;
     background-color: #FC7614;
 }
 
 div.survey--rating input:checked + label::before{color: white}
 
 div.survey--rating input:checked + label{background-color: #7c8798}
-
-/*
-div.survey--rating {
-    display: flex;
-    justify-content: center;
-}
-
-div.survey--rating ul {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-}
-
-div.survey--rating li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #262E38;
-    color: #7C8798;
-    border-radius: 50%;
-    transition: ease .3s;
-}
-
-    div.survey--rating li:hover {
-        cursor: pointer;
-        background-color: #FC7614;
-        color: white;
-    }
-
-    div.survey--rating li:focus {
-        background-color: #7C8798;
-        color: white;
-    }
-*/
 
 button {
     border: none;

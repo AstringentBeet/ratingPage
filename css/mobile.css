@@ -36,23 +36,21 @@
 
 
     div.survey--rating{
+        height: 42px;
+        width: 281px;
         margin-bottom: 24px;
     }
-/*
-    div.survey--rating ul{
-        width: 281px;
-    }
 
-    div.survey--rating li{
+    div.survey--rating label{
         height: 42px;
         width: 42px;
     }
 
-    div.survey--rating li:hover {
+    div.survey--rating input:not(:checked) ~ label:hover{
         height: 48px;
         width: 48px;
     }
-*/
+
     button {
         height: 45px;
         width: 280px;
