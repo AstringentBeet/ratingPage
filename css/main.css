@@ -54,7 +54,7 @@ div.survey--rating label{
 
 input + label::before{color:  #7c8798}
 
-/*delete once you have the basics set up*/
+/*Assigns each button a number rating*/
 input#survey--rate-1 + label::before{content: "1"}
 
 input#survey--rate-2 + label::before{ content: "2"}
@@ -66,7 +66,7 @@ input#survey--rate-4 + label::before{ content: "4"}
 input#survey--rate-5 + label::before{ content: "5"}
 
 /*a very interestig selector*/
-div.survey--rating input:not(:checked) ~ label:hover{
+div.survey--rating input ~ label:hover{
     background-color: #FC7614;
 }
 

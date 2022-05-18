@@ -1,33 +1,33 @@
 @media only screen and (max-width: 375px){
 
-    section.survey{
+    section.survey {
         height: 100vh;
     }
     
-    div.survey--container{
+    div.survey--container {
         height: 360px;
         width: 328px;
         background-color: #232a34;
         border-radius: 15px;
     }
 
-    div.survey--star_container{
+    div.survey--star_container {
         margin-top: 24px;
         margin-bottom: 16px;
         width: 279px;
     }
 
-    div.survey--star{
+    div.survey--star {
         height: 42px;
         width: 42px;
     }
     
-    h1.survey--heading{
+    h1.survey--heading {
         width: 279px;
         margin-bottom: 10px;
     }
 
-    p.survey--para{
+    p.survey--para {
         font-size: 14px;
         height: 66px;
         width: 279px;
@@ -35,18 +35,18 @@
     }
 
 
-    div.survey--rating{
+    div.survey--rating {
         height: 42px;
         width: 281px;
         margin-bottom: 24px;
     }
 
-    div.survey--rating label{
+    div.survey--rating label {
         height: 42px;
         width: 42px;
     }
 
-    div.survey--rating input:not(:checked) ~ label:hover{
+    div.survey--rating input ~ label:hover {
         height: 48px;
         width: 48px;
     }
