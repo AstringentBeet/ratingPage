@@ -1,8 +1,6 @@
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 430px){
 
-    section.survey {
-        height: 100vh;
-    }
+    section.survey { height: 100vh }
     
     div.survey--container {
         height: 360px;
@@ -35,23 +33,24 @@
     }
 
 
-    div.survey--rating {
+    form.survey--rating {
         height: 42px;
         width: 281px;
         margin-bottom: 24px;
     }
 
-    div.survey--rating label {
+    form.survey--rating label {
         height: 42px;
         width: 42px;
     }
 
-    div.survey--rating input ~ label:hover {
+    form.survey--rating input ~ label:hover {
         height: 48px;
         width: 48px;
     }
 
     button {
+        margin-top: 69px;
         height: 45px;
         width: 280px;
         border-radius: 22.5px;
