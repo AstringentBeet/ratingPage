@@ -59,8 +59,10 @@ The 'thank you' section has the basic outline but I'll deal with that more tomor
 #### 05/17
 I recently watched a video that reminded me that HTML has `<input>` tags that gather user information, specifically the radio type. So, I'm redoing the rating selection to remove the need of overstyling a simple unordered list (which is more commonly used for navigation).
 
-#### 05/23/2022
+#### 05/23;1926
 Now that I'm implenting Javascript into the mix, I'm now realizing that having pseudo-elements is a CSS-only type of deal. Sure, there are ways to work around that, but it's far more work than it's worth. I'm going to change the HTML elements into buttons, and rewrite the CSS within the pages. This'll be fun...
+#### 05/23;2008
+That was a colossal failure, so I'm going back to radio inputs, but placing the numbers within that `<label>` tags themselves.
 
 ### Built with
 
