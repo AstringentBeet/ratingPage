@@ -1,8 +1,41 @@
-@media only screen and (max-width: 430px){
+/*****  TABLE OF CONTENTS
 
-    section.survey { height: 100vh }
+ *****  Files:
+            1.) main.css – as the name implies, 
+            carries the bulk of the layout for 
+            the whole page, regardless of the viewing
+            device. Besides text.css, each subsequent 
+            css file is catered to each viewing devices 
+            needs (font-size, spacing, etc).
+
+            2.)text.css – serves as a custom text layout for
+            the whole page, preventing excessive need to adjust
+            the font size for the page.
+
+            3.) mobile.css; desktop.css – files made for devices
+            with a width of at most 430px (for mobile platforms),
+            and at least 1440px (for desk/laptop platforms).
+
+ *****  Both sections:
+            self-descriptive, but covers both sections of the page
+            (survey, and post-survey "thank you" section).
+
+ *****  Survey section:
+            Covers only the survey section of the page.
+
+ ***** 'Thank you' section:
+            Covers only the "thank you" section of the page.
+
+ ***** Keyframes:
+            A very brief, but vital component in the page's fluidity
+            (in terms of animation). Experimental and subject to change.
+*****/
+
+@media only screen and (max-width: 450px){
+
+    section.survey, section.thanks { height: 100vh }
     
-    div.survey--container {
+    div.survey--container, .thanks--container {
         height: 360px;
         width: 328px;
         background-color: #232a34;
@@ -22,16 +55,14 @@
     
     h1.survey--heading {
         width: 279px;
-        margin-bottom: 10px;
+        margin-bottom: 17px;
     }
 
-    p.survey--para {
+    p.survey--para, p.thanks--para {
         font-size: 14px;
         height: 66px;
         width: 279px;
-        margin-bottom: 24px;
     }
-
 
     form.survey--rating {
         height: 42px;
@@ -49,23 +80,38 @@
         width: 48px;
     }
 
-    button {
+    .submit {
         margin-top: 69px;
         height: 45px;
         width: 280px;
         border-radius: 22.5px;
     }
 
-    button:hover {
+    .submit:hover {
         font-size: 1em;
         height: 50px;
         width: 284px;
     }
 
+    div.thanks--image{
+        margin-top: 34px;
+        margin-bottom: 12px;
+    }
+
     p.thanks--sentence {
+        margin-top: 12px;
+        margin-bottom: 12px;
         height: 32px;
         width: 168px;
         font-size: 14px;
     }
 
+    h1.thanks--heading{
+        margin-bottom: 10px;
+        margin-top: 12px;
+    }
+
+    p.survey--para{
+        margin-bottom: 37px;
+    }
 }
