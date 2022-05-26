@@ -35,6 +35,8 @@ body {
     background-color: #131518;
 }
 
+/***** Both Sections *****/
+
 section.survey, section.thanks{
     display: flex;
     justify-content: center;
@@ -47,6 +49,13 @@ div.survey--container, div.thanks--container {
     flex-direction: column;
 }
 
+p.survey--para, p.thanks--para{ color: #969FAD }
+
+
+h1.survey--heading, h1.thanks--heading{ color: white }
+
+/***** Survey Section *****/
+
 div.survey--star{
     display: flex;
     justify-content: center;
@@ -54,10 +63,6 @@ div.survey--star{
     background-color: #262E38;
     border-radius: 50%;
 }
-
-h1.survey--heading, h1.thanks--heading{ color: white }
-
-p.survey--para, p.thanks--para{ color: #969FAD }
 
 form.survey--rating{
     display: flex;
@@ -78,10 +83,8 @@ form.survey--rating label{
     transition: ease .3s;
 }
 
-/*Assigns each button a number rating*/
 label.rate-number{color: #7c8798;}
 
-/*a very interestig selector*/
 form.survey--rating input ~ label.rate-number:hover { 
     background-color: #FC7614;
     color: white;
@@ -105,16 +108,14 @@ form.survey--rating input:checked + label{background-color: #7c8798}
     background-color: white;
 }
 
-/*displays/hides sections of the page*/
 section.hidden{ display: none}
+
+/***** Thanks Section *****/
 
 p.thanks--sentence {
     color: #FC7614;
     border-radius: 22.5px;
     background-color: #262E38;
-}
-
-p.thanks--sentence{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,6 +125,8 @@ p.thanks--sentence{
 p.thanks--para{
     text-align: center;
 }
+
+/***** Footer *****/
 
 footer {
     font-size: .9em;
@@ -141,6 +144,8 @@ footer a.links:link, a.links:visited {
 }
 
 footer a.links:active{ color: white }
+
+/***** Keyframes Portion *****/
 
 @keyframes error {
     0%{

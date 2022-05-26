@@ -37,6 +37,7 @@
 
     /***** Both sections *****/
     p.survey--para, p.thanks--para{
+        line-height: 24px;
         width: 340px;
         height: 72px;
     }

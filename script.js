@@ -17,6 +17,10 @@ submit.addEventListener('click', e => {
                 thxPage.style.animation = "fadein 1.5s ease-out forwards";
             }, 250);
         } else if(radioButton.checked === false) {
+            /*allows the keyframes animation to be run multiple times*/
+            /*if the user doesn't click any of the numbers, the page will not change,
+            and the submit button will change briefly change color, indicating that there
+            must be a selection*/
             function error (){
                 document.querySelector(".submit").className = "submit";
                 window.requestAnimationFrame(function(time){

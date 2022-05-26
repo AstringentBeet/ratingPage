@@ -33,6 +33,8 @@
 
 @media only screen and (max-width: 450px){
 
+    /***** Both Sections *****/
+
     section.survey, section.thanks { height: 100vh }
     
     div.survey--container, .thanks--container {
@@ -41,6 +43,14 @@
         background-color: #232a34;
         border-radius: 15px;
     }
+
+    p.survey--para, p.thanks--para {
+        font-size: 14px;
+        height: 66px;
+        width: 279px;
+    }
+
+    /***** Survey Section *****/
 
     div.survey--star_container {
         margin-top: 24px;
@@ -58,10 +68,8 @@
         margin-bottom: 17px;
     }
 
-    p.survey--para, p.thanks--para {
-        font-size: 14px;
-        height: 66px;
-        width: 279px;
+    p.survey--para{
+        margin-bottom: 37px;
     }
 
     form.survey--rating {
@@ -93,6 +101,8 @@
         width: 284px;
     }
 
+    /***** Thank You Section *****/
+
     div.thanks--image{
         margin-top: 34px;
         margin-bottom: 12px;
@@ -111,7 +121,4 @@
         margin-top: 12px;
     }
 
-    p.survey--para{
-        margin-bottom: 37px;
-    }
 }
