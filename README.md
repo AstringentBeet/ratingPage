@@ -123,6 +123,6 @@ else if(radioButton.checked === false) {
 
 ## Author
 
-- Website - [Alex](https://www.your-site.com)
+- Website - [Alex](https://astringentbeet.github.io/ratingPage/)
 - Frontend Mentor - [@AstringentBeet](https://www.frontendmentor.io/profile/AstringentBeet)
 
