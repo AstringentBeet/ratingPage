@@ -59,69 +59,70 @@ The 'thank you' section has the basic outline but I'll deal with that more tomor
 #### 05/17
 I recently watched a video that reminded me that HTML has `<input>` tags that gather user information, specifically the radio type. So, I'm redoing the rating selection to remove the need of overstyling a simple unordered list (which is more commonly used for navigation).
 
-#### 05/23/2022
+#### 05/23;1926
 Now that I'm implenting Javascript into the mix, I'm now realizing that having pseudo-elements is a CSS-only type of deal. Sure, there are ways to work around that, but it's far more work than it's worth. I'm going to change the HTML elements into buttons, and rewrite the CSS within the pages. This'll be fun...
+#### 05/23;2008
+That was a colossal failure, so I'm going back to radio inputs, but placing the numbers within that `<label>` tags themselves.
+
+#### 05/25
+I decided to replace `document.querySelector(input[type="radio"][name="rate"]:checked);` with a more verbose, but more flexbile version:
+```js
+submit.addEventListener('click', e => {
+  let radio = document.querySelectorAll("input[name='rate']");
+      let userSelection;
+      e.preventDefault();
+      radio.forEach(radioButton => {
+          if(radioButton.checked){
+              userSelection = radioButton.value;
+              setTimeout(function () {
+                  score.innerHTML = userSelection;
+                  survey.className = "hidden";
+                  thxPage.classList.remove("hidden");
+                  thxPage.style.animation = "fadein 1.5s ease-out forwards";
+              }, 250);
+          }
+      })
+});
+```
+It would be best to show the first half of the function instead of a snippet so it can make more sense. Nonetheless, using the input Checkbox Checked property allowed the function to determine whehter the button on the screen was actually checked. If it wasn't checked:
+```js
+/*continued from previous function*/
+else if(radioButton.checked === false) {
+            function error (){
+                document.querySelector(".submit").className = "submit";
+                window.requestAnimationFrame(function(time){
+                    window.requestAnimationFrame(function(time){
+                        document.querySelector(".submit").classList.toggle("error")
+                    })
+                })
+            }
+            error();
+        };
+```
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
+- Vanilla Javascript
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+- How to better use Flexbox
+- Input types and how to manipulate them via Javascript
+- The DOM ClassList.toggle() method.
+- Keyframes animation (just the basics)
 
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- The Youtube channel, CodingNepal, was a [tremendous inspiration for both the HTML and CSS layout](https://www.youtube.com/watch?v=rw3eZ6XodN8). The best part about this video is that there isn't any talking or explaining, as it is self-explanatory. Instead of being over fifty minutes, it's a brief sixteen minutes long. There needs to be more channels such as this one.
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- Mozilla also had a wonderful tip that helped me figure out how to [run a keyframes animation multiple times](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Tips). 
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Alex](https://www.your-site.com)
+- Frontend Mentor - [@AstringentBeet](https://www.frontendmentor.io/profile/AstringentBeet)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-The Youtube channel, CodingNepal, was a [tremendous inspiration for both the HTML and CSS layout](https://www.youtube.com/watch?v=rw3eZ6XodN8). The best part about this video is that there isn't any talking or explaining, as it is self-explanatory. Instead of being over fifty minutes, it's a brief sixteen minutes long. There needs to be more channels such as this
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

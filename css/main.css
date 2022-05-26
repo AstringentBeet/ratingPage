@@ -1,7 +1,41 @@
-body {
+/*****  TABLE OF CONTENTS
+
+ *****  Files:
+            1.) main.css – as the name implies, 
+            carries the bulk of the layout for 
+            the whole page, regardless of the viewing
+            device. Besides text.css, each subsequent 
+            css file is catered to each viewing devices 
+            needs (font-size, spacing, etc).
+
+            2.)text.css – serves as a custom text layout for
+            the whole page, preventing excessive need to adjust
+            the font size for the page.
+
+            3.) mobile.css; desktop.css – files made for devices
+            with a width of at most 430px (for mobile platforms),
+            and at least 1440px (for desk/laptop platforms).
+
+ *****  Both sections:
+            self-descriptive, but covers both sections of the page
+            (survey, and post-survey "thank you" section).
+
+ *****  Survey section:
+            Covers only the survey section of the page.
+
+ ***** 'Thank you' section:
+            Covers only the "thank you" section of the page.
+
+ ***** Keyframes:
+            A very brief, but vital component in the page's fluidity
+            (in terms of animation). Experimental and subject to change.
+*****/
+body { 
     font-family: 'Overpass', sans-serif;
     background-color: #131518;
 }
+
+/***** Both Sections *****/
 
 section.survey, section.thanks{
     display: flex;
@@ -15,6 +49,13 @@ div.survey--container, div.thanks--container {
     flex-direction: column;
 }
 
+p.survey--para, p.thanks--para{ color: #969FAD }
+
+
+h1.survey--heading, h1.thanks--heading{ color: white }
+
+/***** Survey Section *****/
+
 div.survey--star{
     display: flex;
     justify-content: center;
@@ -23,15 +64,10 @@ div.survey--star{
     border-radius: 50%;
 }
 
-h1.survey--heading, h1.thanks--heading{ color: white }
-
-p.survey--para, p.thanks--para{ color: #969FAD }
-
 form.survey--rating{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 0;
 }
 
 /*hides the original radio buttons*/
@@ -47,27 +83,18 @@ form.survey--rating label{
     transition: ease .3s;
 }
 
-input + label::before{color:  #7c8798}
+label.rate-number{color: #7c8798;}
 
-/*Assigns each button a number rating*/
-input#survey--rate-1 + label::before{content: "1"}
+form.survey--rating input ~ label.rate-number:hover { 
+    background-color: #FC7614;
+    color: white;
+ }
 
-input#survey--rate-2 + label::before{ content: "2"}
-
-input#survey--rate-3 + label::before{ content: "3"}
-
-input#survey--rate-4 + label::before{ content: "4"}
-
-input#survey--rate-5 + label::before{ content: "5"}
-
-/*a very interestig selector*/
-form.survey--rating input ~ label:hover { background-color: #FC7614 }
-
-form.survey--rating input:checked + label::before{color: white}
+form.survey--rating input:checked + label{color: white}
 
 form.survey--rating input:checked + label{background-color: #7c8798}
 
-button {
+.submit {
     position: absolute;
     border: none;
     color: white;
@@ -76,27 +103,30 @@ button {
     transition: ease .3s;
 }
 
-button:hover{
+.submit:hover{
     color:#FC7614;
     background-color: white;
 }
 
-.button--error:active{background-color: #E71809}
-
-/*displays/hides sections of the page*/
 section.hidden{ display: none}
+
+/***** Thanks Section *****/
 
 p.thanks--sentence {
     color: #FC7614;
     border-radius: 22.5px;
     background-color: #262E38;
-}
-
-p.thanks--sentence{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
+
+p.thanks--para{
+    text-align: center;
+}
+
+/***** Footer *****/
 
 footer {
     font-size: .9em;
@@ -114,6 +144,27 @@ footer a.links:link, a.links:visited {
 }
 
 footer a.links:active{ color: white }
+
+/***** Keyframes Portion *****/
+
+@keyframes error {
+    0%{
+        background-color: #FC7614;
+    }
+
+    10%{
+        background-color: #E71809;
+        color:white;
+    }
+}
+
+.error{
+    animation: error .5s;
+}
+
+.stop {
+    animation-name: none;
+}
 
 @keyframes fadein {
     from {opacity: 0}
