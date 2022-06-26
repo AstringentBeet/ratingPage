@@ -99,6 +99,7 @@ else if(radioButton.checked === false) {
             error();
         };
 ```
+This allows the keyframes animation to be run multiple times; if the user doesn't click any of the numbers, the page will not change, and the submit button will change briefly change color, indicating that there must be a selection.
 
 ### Built with
 

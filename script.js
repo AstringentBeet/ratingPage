@@ -2,11 +2,15 @@ let submit = document.getElementById("button");
 let survey = document.querySelector(".survey");
 let score = document.querySelector("#thanks--outOf");
 let thxPage = document.querySelector(".thanks")
+let radio = document.querySelectorAll("input[name='rate']");
 
-submit.addEventListener('click', e => {
-    let radio = document.querySelectorAll("input[name='rate']");
+
+
+submit.addEventListener('click', subButton) 
+
+function subButton(evt){
     let userSelection;
-    e.preventDefault();
+    evt.preventDefault();
     radio.forEach(radioButton => {
         if(radioButton.checked){
             userSelection = radioButton.value;
@@ -17,10 +21,6 @@ submit.addEventListener('click', e => {
                 thxPage.style.animation = "fadein 1.5s ease-out forwards";
             }, 250);
         } else if(radioButton.checked === false) {
-            /*allows the keyframes animation to be run multiple times*/
-            /*if the user doesn't click any of the numbers, the page will not change,
-            and the submit button will change briefly change color, indicating that there
-            must be a selection*/
             function error (){
                 document.querySelector(".submit").className = "submit";
                 window.requestAnimationFrame(function(time){
@@ -32,4 +32,4 @@ submit.addEventListener('click', e => {
             error();
         }
     });
-});
+}
